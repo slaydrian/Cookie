@@ -1,0 +1,13 @@
+package a18080.a0.a0.http127.cookie;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class mainMenuActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main_menu);
+    }
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cookie</string>
+    <string name="bLogin">Login</string>
+    <string name="bSignup">Sign Up</string>
+</resources>

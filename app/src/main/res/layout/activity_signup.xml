@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvGeneral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="General"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/tvCoupleName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Couple name"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/tvAnniversary"
+                app:layout_constraintStart_toStartOf="@+id/tvGeneral"
+                app:layout_constraintTop_toBottomOf="@+id/tvGeneral" />
+
+            <EditText
+                android:id="@+id/tvAnniversary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:ems="10"
+                android:hint="Anniversary date (YYYY/MM/DD)"
+                android:inputType="date"
+                app:layout_constraintEnd_toEndOf="@+id/tvPassword"
+                app:layout_constraintStart_toStartOf="@+id/tvPassword"
+                app:layout_constraintTop_toTopOf="@+id/tvCoupleName" />
+
+            <EditText
+                android:id="@+id/tvPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/tvPasswordConfirmation"
+                app:layout_constraintStart_toStartOf="@+id/tvPasswordConfirmation"
+                app:layout_constraintTop_toBottomOf="@+id/tvAnniversary" />
+
+            <EditText
+                android:id="@+id/tvPasswordConfirmation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:ems="10"
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/tvPerson1"
+                app:layout_constraintStart_toStartOf="@+id/tvPerson1"
+                app:layout_constraintTop_toTopOf="@+id/tvPassword" />
+
+            <TextView
+                android:id="@+id/tvPerson1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Person 1"
+                app:layout_constraintEnd_toEndOf="@+id/tvName1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvName1"
+                app:layout_constraintTop_toBottomOf="@+id/tvPasswordConfirmation" />
+
+            <EditText
+                android:id="@+id/tvName1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/tvBirthday1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvBirthday1"
+                app:layout_constraintTop_toTopOf="@+id/tvPerson1" />
+
+            <EditText
+                android:id="@+id/tvBirthday1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="Birthday (YYYY/MM/DD)"
+                android:inputType="date"
+                app:layout_constraintEnd_toEndOf="@+id/tvEmail1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvEmail1"
+                app:layout_constraintTop_toBottomOf="@+id/tvName1" />
+
+            <EditText
+                android:id="@+id/tvEmail1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:hint="Email address"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="@+id/tvPerson2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvPerson2"
+                app:layout_constraintTop_toTopOf="@+id/tvBirthday1" />
+
+            <TextView
+                android:id="@+id/tvPerson2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Person 2"
+                app:layout_constraintEnd_toEndOf="@+id/tvName2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvName2"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmail1" />
+
+            <EditText
+                android:id="@+id/tvName2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/tvBirthday2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvBirthday2"
+                app:layout_constraintTop_toBottomOf="@+id/tvPerson2" />
+
+            <EditText
+                android:id="@+id/tvBirthday2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Birthday (YYYY/MM/DD)"
+                android:inputType="date"
+                app:layout_constraintEnd_toEndOf="@+id/tvEmail2"
+                app:layout_constraintStart_toStartOf="@+id/tvEmail2"
+                app:layout_constraintTop_toBottomOf="@+id/tvName2" />
+
+            <EditText
+                android:id="@+id/tvEmail2"
+                android:layout_width="352dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="Email address"
+                android:inputType="textWebEmailAddress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvBirthday2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/bSignup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="recordRegistration"
+                android:text="@string/bSignup"
+                app:layout_constraintEnd_toEndOf="@+id/tvEmail2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvEmail2"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmail2" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
